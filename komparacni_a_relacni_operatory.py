@@ -52,6 +52,7 @@ class Zbozi:
     def __hash__(self):
         return hash((self._nazev, self._nazev))
 
+
 try:
     kilo_brambor = Zbozi("Bramobra", 1)
     krabice_mleka = Zbozi("Mleko", 1.029)

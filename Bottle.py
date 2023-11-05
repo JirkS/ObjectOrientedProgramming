@@ -20,7 +20,7 @@ class Bottle:
         :param c:
         :return: True/False by if is the num int and positive
         """
-        if (isinstance(f, int) or isinstance(f, float)) and c >= 0:
+        if (isinstance(c, int) or isinstance(c, float)) and c >= 0:
             self.capacity = c
         else:
             raise Exception("Promenna \"capacity\" musi byt kladne cislo!")
@@ -35,7 +35,6 @@ class Bottle:
             return True
         else:
             raise Exception("Promenna \"fullness\" musi byt kladne cislo!")
-            return False
 
     def set_fullness(self, f):
         """
@@ -56,7 +55,6 @@ class Bottle:
     def set_fullness_empty(self):
         """
         Set empty volume to bottle
-        :param fullness
         """
         if self.open:
             self.fullness = 0
